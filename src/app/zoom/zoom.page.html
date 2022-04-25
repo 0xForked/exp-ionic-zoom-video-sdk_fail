@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="fixed-container">
+    <img src="assets/images/doctor.png" alt="floating-participant">
+  </div>
+
+  <div class="floating-container">
+    <img src="assets/images/customer.png" alt="floating-participant">
+  </div>
+
+  <div class="information-container">
+    <ion-text>
+      <h5>Dr. Evangeline may</h5>
+    </ion-text>
+    <div class="banner">
+      <ion-text>
+        <p>00 : 15</p>
+      </ion-text>
+    </div>
+  </div>
+
+  <ion-fab class="mute" vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button color="secodary">
+      <ion-icon name="mic-off-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab class="call" vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab class="switch" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secodary">
+      <ion-icon name="sync-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
