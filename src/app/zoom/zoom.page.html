@@ -19,17 +19,17 @@
   </div>
 
   <ion-fab class="mute" vertical="bottom" horizontal="start" slot="fixed">
-    <ion-fab-button color="secodary">
-      <ion-icon name="mic-off-outline"></ion-icon>
+    <ion-fab-button color="secodary" (click)="onMute()">
+      <ion-icon name="{{ mute ? 'mic-off-outline' : 'mic-outline' }}"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   <ion-fab class="call" vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button color="danger">
+    <ion-fab-button color="danger" (click)="onDecline()">
       <ion-icon name="call-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   <ion-fab class="switch" vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="secodary">
+    <ion-fab-button color="secodary" (click)="onSwitch()">
       <ion-icon name="sync-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
